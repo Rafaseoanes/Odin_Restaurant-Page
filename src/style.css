@@ -1,0 +1,18 @@
+body{
+    background-color: #f9f5e9;
+    padding: 25px;
+}
+.hello {
+  color: blue;
+}
+.navBar{
+    display: flex;
+    justify-content: center;
+    padding: 25px 5px;
+    background-color: rgb(252, 224, 152);
+}
+.navBarBtn{
+    font-size: x-large;
+    border: none;
+    margin: 0 15px;
+}
