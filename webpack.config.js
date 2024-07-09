@@ -16,15 +16,17 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: "asset/inline",
       },
     ],
   },
   devServer: {
-    watchFiles: ['./src/**/*.html', 'public/**/*'],
+    watchFiles: ["./src/**/*.html", "public/**/*"],
   },
-  plugins: [new HtmlWebpackPlugin({
-    title: "Restaurant page",
-    template: "./src/index.html",
-  })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Restaurant page",
+      template: "./src/index.html",
+    }),
+  ],
 };

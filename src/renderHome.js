@@ -1,5 +1,7 @@
 import "./homeStyle.css";
 import headImg from "./assets/Designer 2.jpeg";
+import cleanUi from "./index.js";
+import renderMenu from "./renderMenu";
 
 const renderHome = function () {
   const content = document.getElementById("content");
@@ -10,6 +12,11 @@ const renderHome = function () {
   const menuBtn = document.createElement("button")
 
   menuBtn.classList.add("btn");
+
+  menuBtn.addEventListener("click", function(){
+    cleanUi()
+    renderMenu()
+  })
 
   headLine.innerText = "Best burgers in town! Guaranteed.";
   burgersDescription.innerText =

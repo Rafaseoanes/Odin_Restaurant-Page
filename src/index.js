@@ -1,20 +1,34 @@
-import "./style.css"
-import "./renderHome"
-import renderHome from "./renderHome"
-import renderMenu  from "./renderMenu"
-
-const documentLoad = document.querySelector("body")
-const content = document.getElementById("content")
-
-const homeBtn = document.getElementById("homeBtn")
-const menuBtn = document.getElementById("menuBtn")
-const aboutBtn = document.getElementById("aboutBtn")
+import "./style.css";
+import "./renderHome";
+import renderHome from "./renderHome";
+import renderMenu from "./renderMenu";
+import renderAbout from "./renderAbout";
 
 
-const cleanUi = function(){
-  
-content.innerHTML = ""
+const content = document.getElementById("content");
 
-}
+const homeBtn = document.getElementById("homeBtn");
+const menuBtn = document.getElementById("menuBtn");
+const aboutBtn = document.getElementById("aboutBtn");
 
-documentLoad.addEventListener("load", renderHome())
+export default function cleanUi() {
+  content.innerHTML = "";
+};
+
+renderHome();
+// renderMenu();
+
+homeBtn.addEventListener("click", function () {
+  cleanUi();
+  renderHome();
+});
+
+menuBtn.addEventListener("click", function () {
+  cleanUi();
+  renderMenu();
+});
+
+aboutBtn.addEventListener("click", function () {
+  cleanUi();
+  renderAbout();
+});
