@@ -16,20 +16,30 @@ export default function cleanUi() {
 };
 
 renderHome();
+homeBtn.style.color = "#f69610"
 // renderMenu();
 // renderAbout();
 
 homeBtn.addEventListener("click", function () {
   cleanUi();
   renderHome();
+  menuBtn.style.color = "#707070"
+  homeBtn.style.color = "#f69610"
+  aboutBtn.style.color = "#707070"
 });
 
 menuBtn.addEventListener("click", function () {
   cleanUi();
   renderMenu();
+  menuBtn.style.color = "#f69610"
+  homeBtn.style.color = "#707070"
+  aboutBtn.style.color = "#707070"
 });
 
 aboutBtn.addEventListener("click", function () {
   cleanUi();
   renderAbout();
+  menuBtn.style.color = "#707070"
+  homeBtn.style.color = "#707070"
+  aboutBtn.style.color = "#f69610"
 });

@@ -22,5 +22,6 @@ body {
   margin: 0 25px;
   background: none;
   font-weight: 400;
-  color: rgb(112, 112, 112);
+  color: #707070;
+  cursor: pointer;
 }
