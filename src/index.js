@@ -15,8 +15,9 @@ export default function cleanUi() {
   content.innerHTML = "";
 };
 
-renderHome();
+// renderHome();
 // renderMenu();
+renderAbout();
 
 homeBtn.addEventListener("click", function () {
   cleanUi();
