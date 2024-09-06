@@ -1,4 +1,4 @@
-# RestaurantPage
+# Restaurant Page
 
 
 ![This is an image](https://i.imgur.com/AhZLD5e.png)
